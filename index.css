@@ -1,0 +1,123 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+html, body {
+  display: flex;
+  flex-direction: column;
+  font-weight: 300;
+  line-height: 1.5;
+}
+
+body {
+  font-family: 'Nunito', normal;
+  background-color: #015249;
+}
+
+a {
+  text-decoration: none;
+}
+
+
+.description {
+  background-color: white;
+  padding: 30px 60px;
+  margin: 0px -10px;
+  border-top: 5px solid #57bc90;
+  border-bottom: 5px solid #57bc90;
+  color: #015249;
+}
+
+.description h1{
+  font-size: 40px;
+}
+
+.description p{
+  font-size: 30px;
+}
+
+.description a{
+  color:#015249;
+}
+
+.description a:hover {
+  color: #77C9D4;
+}
+
+#descrip {
+  margin-left: 350px;
+}
+
+img{
+  float:left;
+  margin: 15px;
+  border: 3px solid #57bc90;
+}
+
+.clearfix::after {
+    content: "";
+    clear: both;
+    display: table;
+}
+
+.footer{
+  background-color: #015249;
+  text-align: center;
+  padding: 0;
+  margin: 0;
+  color: #57bc90;
+}
+
+
+
+/* NAV BAR */
+
+
+.nav li {
+  display: inline;
+  padding: 0 75px;
+  font-size: 22px;
+}
+
+.nav ul {
+  display: inline;
+}
+
+.home {
+  float: left;
+}
+
+.home a {
+  font-size: 35px;
+  margin-left: 40px;
+  padding: 8px 18px;
+  border: 2px solid #57bc90;
+  position: relative;
+
+}
+
+.menu{
+  float:right;
+}
+
+.nav a {
+  height: 90px;
+  line-height: 90px;
+  color: #57bc90;
+  text-decoration: none;
+}
+
+.nav a:hover{
+  color: #77C9D4;
+}
+
+/*color schemes:
+CURRENT: Modernity in Full Bloom
+   #182628 - (dark greenish blue, almost black)
+   #65ccb8 - (mix of sky blue and seafoam green)
+   #57ba98 - (darker version of color above)
+   #3b945e - (leaf green)
+   #f2f2f2 - (whitish gray)
+POSSIBLE: Clean Gradients and Fresh Blues
+   #77C9D4 - feather (sky blue)
+   #57bc90 - marine (seafoam green)
+   #015249 - forest (dark green with hint of blue)
+   #a5a5af - sleek grey (gray .. duh)*/
