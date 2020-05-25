@@ -15,8 +15,11 @@ body {
   border-top: 5px solid #57bc90;
   border-bottom: 5px solid #57bc90;
   color: #015249;
-  height: 400px;
-  width: 100%;
+
+  
+
+  display: flex;
+  justify-content: space-between;
 }
 
 
@@ -31,7 +34,6 @@ body {
 }
 
 img{
-  float:left;
   border: 3px solid #57bc90;
   margin: 15px;
 
@@ -56,7 +58,7 @@ img{
  }
 
  .nav-wrapper > .right-side > div {
-  margin-right: 20px;
+  margin-left: 20px;
 }
 
  .nav-link-wrapper {
