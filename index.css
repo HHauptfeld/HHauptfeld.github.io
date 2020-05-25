@@ -6,25 +6,19 @@ body {
   font-family: 'Nunito', normal;
   background-color: #015249;
   color: #57bc90;
-  padding: 0;
   margin: 0;
 }
 
 
 .description {
-  background-color: white;
+  background-color: #f2f2f2;
   border-top: 5px solid #57bc90;
   border-bottom: 5px solid #57bc90;
   color: #015249;
   height: 400px;
   width: 100%;
-  padding-top: 50px;
-
 }
 
-.description h1{
-  padding-top: 100px;
-}
 
 
 .description a{
@@ -51,40 +45,37 @@ img{
 
 /* NAV BAR */
 
-.home {
-  margin: 10px;
-  border: 2px solid #57bc90;
-  font-size: 25px;
-
-}
-
-nav li a:hover{
-  color: #77C9D4;
-}
-
-
 .topnav {
-  overflow: hidden;
+  display: flex;
+  justify-content: space-between;
+  padding: 35px;
+ }
+
+ .right-side {
+   display: flex;
+ }
+
+ .nav-wrapper > .right-side > div {
+  margin-right: 20px;
 }
 
-.topnav a {
-  float: left;
+ .nav-link-wrapper {
+  height: 21px;
+}
+
+.left-side > div > a{
+  border: 2px solid #57bc90;
+}
+
+.nav-link-wrapper a {
   color: #57bc90;
-  text-align: center;
-  padding: 14px 16px;
+  padding: 15px;
   text-decoration: none;
   font-size: 20px;
-  line-height: 20px;
-height: 20px;
 }
 
 .topnav a:hover {
   color: #77C9D4;
-}
-
-.topnav-right {
-  padding-top: 10px;
-  float: right;
 }
 
 /*color schemes:
