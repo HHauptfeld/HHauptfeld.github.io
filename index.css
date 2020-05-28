@@ -12,14 +12,10 @@ body {
 
 .description {
   background-color: #f2f2f2;
-  border-top: 5px solid #57bc90;
-  border-bottom: 5px solid #57bc90;
   color: #015249;
-
-  
-
   display: flex;
   justify-content: space-between;
+  padding: 10px 200px;
 }
 
 
@@ -31,6 +27,39 @@ body {
 
 .description a:hover {
   color: #77C9D4;
+}
+
+
+/*SKILLS DIV*/
+* {box-sizing: border-box}
+
+.my-skills{
+  padding: 50px 100px;
+  color: #f2f2f2;
+  background-color: #57bc90;
+}
+
+.skills-container {
+  width: 100%;
+  background-color: #ddd;
+}
+
+.skills {
+  text-align: right;
+  padding: 10px 0px;
+  color: white;
+  background-color: #015249;
+}
+
+.java {width: 90%;}
+.html {width: 80%;}
+.css {width: 65%;}
+.javascript {width: 60%;}
+
+.experience {
+  background-color: #f2f2f2;
+  color: #015249;
+  padding: 20px 100px;
 }
 
 img{
