@@ -6,16 +6,15 @@ body {
   font-family: 'Nunito', normal;
   background-color: #015249;
   color: #57bc90;
-  margin: 0;
 }
 
-
+/*DESCRIPTION DIV*/
 .description {
   background-color: #f2f2f2;
   color: #015249;
   display: flex;
   justify-content: space-between;
-  padding: 10px 200px;
+  padding: 30px 200px;
 }
 
 
@@ -31,7 +30,6 @@ body {
 
 
 /*SKILLS DIV*/
-* {box-sizing: border-box}
 
 .my-skills{
   padding: 50px 100px;
@@ -41,20 +39,28 @@ body {
 
 .skills-container {
   width: 100%;
-  background-color: #ddd;
+  background-color: #f2f2f2;
 }
 
 .skills {
-  text-align: right;
-  padding: 10px 0px;
-  color: white;
+  text-align: center;
+  padding: 15px 0px;
+  color: #f2f2f2;
   background-color: #015249;
 }
 
-.java {width: 90%;}
-.html {width: 80%;}
-.css {width: 65%;}
-.javascript {width: 60%;}
+.languages{
+  padding: 0px 50px;
+}
+
+.java {width: 80%;}
+.html {width: 70%;}
+.css {width: 60%;}
+.javascript {width: 65%;}
+.python {width: 50%;}
+.matlab {width: 40%;}
+.c {width: 35%;}
+
 
 .experience {
   background-color: #f2f2f2;
@@ -91,7 +97,7 @@ img{
 }
 
  .nav-link-wrapper {
-  height: 21px;
+  height: 20px;
 }
 
 .left-side > div > a{
