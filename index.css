@@ -4,8 +4,9 @@
 
 body {
   font-family: 'Nunito', normal;
-  background-color: #015249;
+  background-color: purple;
   color: #57bc90;
+  margin: 0;
 }
 
 /*DESCRIPTION DIV*/
@@ -14,10 +15,12 @@ body {
   color: #015249;
   display: flex;
   justify-content: space-between;
-  padding: 30px 200px;
+  padding: 100px 300px;
 }
 
-
+.about-text{
+  margin-top: 100px;
+}
 
 .description a{
   color:#015249;
@@ -50,12 +53,11 @@ body {
 }
 
 .languages{
-  padding: 0px 50px;
+  padding: 0px 100px;
 }
 
 .java {width: 80%;}
 .html {width: 70%;}
-.css {width: 60%;}
 .javascript {width: 65%;}
 .python {width: 50%;}
 .matlab {width: 40%;}
@@ -86,6 +88,10 @@ img{
   display: flex;
   justify-content: space-between;
   padding: 35px;
+  position: fixed;
+  top: 0;
+  width: 100%;
+  background-color: #015249;
  }
 
  .right-side {
