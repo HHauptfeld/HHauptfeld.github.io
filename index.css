@@ -5,14 +5,6 @@
 /* RESET RULES & HELPER CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 :root {
-  --gray: #cbcfd3;
-  --white: white;
-  --black: #1a1a1a;
-  --lightwhite: whitesmoke;
-  --lightblue: #009dd3;
-  --peach: #ff9469;
-  --transition-delay: 0.3s;
-  --transition-delay-step: 0.3s;
   --skills-width: 120px;
 }
 
@@ -64,7 +56,7 @@ a {
 }
 
 .vh-100 {
-  height: 100vh;
+  height: 50vh;
 }
 
 .position-relative {
@@ -83,33 +75,6 @@ a {
   text-align: center;
 }
 
-.text-gray {
-  color: var(--gray);
-}
-
-.text-lightblue {
-  color: var(--lightblue);
-}
-
-.text-peach {
-  color: var(--peach);
-}
-
-.bg-white {
-  background: var(--white);
-}
-
-.bg-lightwhite {
-  background: var(--lightwhite);
-}
-
-.h1 {
-  font-size: 2.5rem;
-}
-
-.h2 {
-  font-size: 2rem;
-}
 
 
 
@@ -126,7 +91,7 @@ a {
 
 body {
   font-family: 'Nunito', normal;
-  background-color: purple;
+  background-color: #015249;
   color: #57bc90;
   margin: 0;
 }
@@ -135,13 +100,10 @@ body {
 .description {
   background-color: #f2f2f2;
   color: #015249;
-  display: flex;
-  justify-content: space-between;
-  padding: 100px 300px;
-}
+  text-align: center;
+  padding-top: 150px;
+  padding-bottom: 75px;
 
-.about-text{
-  margin-top: 100px;
 }
 
 .description a{
@@ -153,15 +115,27 @@ body {
   color: #77C9D4;
 }
 
+.portrait, .about-text{
+  width: 350px;
+  display: inline-block;
+  text-align: left;
+  vertical-align: middle;
+}
+
+
 
 /*SKILLS DIV*/
 
 .my-skills{
-  padding: 50px 100px;
+  padding: 50px 200px;
   color: #f2f2f2;
   background-color: #57bc90;
 }
 
+#skills{
+  padding:100px;
+}
+/*
 .skills-container {
   width: 100%;
   background-color: #f2f2f2;
@@ -184,12 +158,12 @@ body {
 .python {width: 50%;}
 .matlab {width: 40%;}
 .c {width: 35%;}
-
+*/
 
 .experience {
   background-color: #f2f2f2;
   color: #015249;
-  padding: 20px 100px;
+  padding: 50px 200px;
 }
 
 img{
@@ -200,6 +174,7 @@ img{
 
 .footer{
   text-align: center;
+  padding: 30px 0px;
 }
 
 
@@ -207,7 +182,7 @@ img{
 /* CHART
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 .chart-wrapper {
-  width: 95%;
+  width: 100%;
   max-width: 500px;
 }
 
@@ -230,41 +205,30 @@ img{
 
 .chart-wrapper .chart-skills li::before {
   width: 0;
-  background: var(--lightblue);
-  transition: width 0.65s ease-out;
+  background: #015249;
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
   width: calc(90% - var(--skills-width));
-  transition-delay: var(--transition-delay);
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
   width: calc(75% - var(--skills-width));
-  transition-delay: calc(
-    var(--transition-delay) + var(--transition-delay-step)
-  );
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
   width: calc(62% - var(--skills-width));
-  transition-delay: calc(
-    var(--transition-delay) + var(--transition-delay-step) * 2
-  );
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
-  width: calc(49% - var(--skills-width));
-  transition-delay: calc(
-    var(--transition-delay) + var(--transition-delay-step) * 3
-  );
+  width: calc(50% - var(--skills-width));
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
-  width: calc(38% - var(--skills-width));
-  transition-delay: calc(
-    var(--transition-delay) + var(--transition-delay-step) * 4
-  );
+  width: calc(45% - var(--skills-width));
+}
+.chart-wrapper.in-view .chart-skills li:nth-child(6)::before {
+  width: calc(45% - var(--skills-width));
 }
 
 .chart-wrapper .chart-skills span {
@@ -285,55 +249,13 @@ img{
   border-right: 1px solid rgba(211, 211, 211, 0.3);
 }
 
-.chart-wrapper .chart-levels li:last-child {
-  border-right: 0;
-}
 
 .chart-wrapper .chart-levels span {
   bottom: 0;
   transform: translateY(50px) rotate(45deg);
-  padding: 10px;
   width: 100%;
 }
 
-/* CREATOR
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-.creator {
-  right: 20px;
-  bottom: 20px;
-}
-
-.creator span {
-  color: #e31b23;
-}
-
-/* ANIMATIONS
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@keyframes pulse {
-  0% {
-    transform: scaleY(1);
-  }
-  50% {
-    transform: scaleY(0.65);
-  }
-  100% {
-    transform: scaleY(1);
-  }
-}
-
-/* MQ
-–––––––––––––––––––––––––––––––––––––––––––––––––– */
-@media screen and (max-width: 900px) {
-  .bg-img {
-    display: none;
-  }
-}
-
-@media screen and (max-width: 600px) {
-  html {
-    font-size: 12px;
-  }
-}
 
 
 
@@ -391,82 +313,5 @@ POSSIBLE: Clean Gradients and Fresh Blues
    #015249 - forest (dark green with hint of blue)
    #a5a5af - sleek grey (gray .. duh)*/
 
-   :root {
-    --gray: #cbcfd3;
-    --white: white;
-    --black: #1a1a1a;
-    --lightwhite: whitesmoke;
-    --lightblue: #009dd3;
-    --peach: #ff9469;
-    --transition-delay: 0.3s;
-    --transition-delay-step: 0.3s;
-    --skills-width: 120px;
-  }
   
-  * {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-  }
-  
-  ul {
-    list-style: none;
-  }
-  
-  a {
-    text-decoration: none;
-    color: inherit;
-  }
-  
-  .d-block {
-    display: block;
-  }
-  
-  .d-flex {
-    display: flex;
-  }
-  
-  .flex-column {
-    flex-direction: column;
-  }
-  
-  .justify-content-center {
-    justify-content: center;
-  }
-  
-  .justify-content-between {
-    justify-content: space-between;
-  }
-  
-  .align-items-center {
-    align-items: center;
-  }
-  
-  .align-items-end {
-    align-items: flex-end;
-  }
-  
-  .flex-grow-1 {
-    flex-grow: 1;
-  }
-  
-  .vh-100 {
-    height: 50vh;
-  }
-  
-  .position-relative {
-    position: relative;
-  }
-  
-  .position-absolute {
-    position: absolute;
-  }
-  
-  .position-fixed {
-    position: fixed;
-  }
-  
-  .text-center {
-    text-align: center;
-  }
   
