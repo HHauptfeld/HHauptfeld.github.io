@@ -230,6 +230,9 @@ img{
 .chart-wrapper.in-view .chart-skills li:nth-child(6)::before {
   width: calc(45% - var(--skills-width));
 }
+.chart-wrapper.in-view .chart-skills li:nth-child(7)::before {
+  width: calc(40% - var(--skills-width));
+}
 
 .chart-wrapper .chart-skills span {
   display: inline-block;

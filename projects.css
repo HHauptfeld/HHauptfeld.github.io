@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+body {
+    font-family: 'Nunito', normal !important;
+    background-color: #015249;
+    color: #57bc90;
+    margin: 0 !important;
+    padding: 0 !important;
+}
+
+
+/*MAIN DIV*/
+
+.main {
+    background-color: #f2f2f2;
+    color: #015249;
+    text-align: center;
+    padding-top: 150px;
+    padding-bottom: 75px;
+}
+
+.main a {
+    color: #015249;
+    text-decoration: none;
+}
+
+.main a:hover {
+    color: #77C9D4;
+}
+
+.footer {
+    text-align: center;
+    padding: 30px 0px;
+}
+
+
+/*IMG STUFF*/
+
+.img__wrap {
+    position: relative;
+    height: 200px;
+    width: 257px;
+}
+
+.img__description_layer {
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    background: rgba(36, 62, 206, 0.6);
+    color: #fff;
+    visibility: hidden;
+    opacity: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* transition effect. not necessary */
+    transition: opacity .2s, visibility .2s;
+}
+
+.img__wrap:hover .img__description_layer {
+    visibility: visible;
+    opacity: 1;
+}
+
+.img__description {
+    transition: .2s;
+    transform: translateY(1em);
+}
+
+.img__wrap:hover .img__description {
+    transform: translateY(0);
+}
+
+
+/* NAV BAR */
+
+.topnav {
+    display: flex;
+    justify-content: space-between;
+    padding: 35px !important;
+    position: fixed;
+    top: 0;
+    width: 100%;
+    background-color: #015249;
+}
+
+.right-side {
+    display: flex;
+}
+
+.nav-wrapper>.right-side>div {
+    margin-left: 20px;
+}
+
+.nav-link-wrapper {
+    height: 20px;
+}
+
+.left-side>div>a {
+    border: 2px solid #57bc90;
+}
+
+.nav-link-wrapper a {
+    color: #57bc90;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
+}
+
+.topnav a:hover {
+    color: #77C9D4;
+}
+
+
+/*color schemes:
+CURRENT: Modernity in Full Bloom
+   #182628 - (dark greenish blue, almost black)
+   #65ccb8 - (mix of sky blue and seafoam green)
+   #57ba98 - (darker version of color above)
+   #3b945e - (leaf green)
+   #f2f2f2 - (whitish gray)
+POSSIBLE: Clean Gradients and Fresh Blues
+   #77C9D4 - feather (sky blue)
+   #57bc90 - marine (seafoam green)
+   #015249 - forest (dark green with hint of blue)
+   #a5a5af - sleek grey (gray .. duh)*/
