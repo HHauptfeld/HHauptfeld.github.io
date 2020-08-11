@@ -1,10 +1,80 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 body {
-    font-family: 'Nunito', normal !important;
+    font-family: 'Nunito', normal;
     background-color: #015249;
     color: #57bc90;
-    margin: 0 !important;
-    padding: 0 !important;
+    margin: 0;
+}
+
+:root {
+    --skills-width: 120px;
+}
+
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+ul {
+    list-style: none;
+}
+
+a {
+    text-decoration: none;
+    color: inherit;
+}
+
+.d-block {
+    display: block;
+}
+
+.d-flex {
+    display: flex;
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.justify-content-center {
+    justify-content: center;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-items-end {
+    align-items: flex-end;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.vh-100 {
+    height: 50vh;
+}
+
+.position-relative {
+    position: relative;
+}
+
+.position-absolute {
+    position: absolute;
+}
+
+.position-fixed {
+    position: fixed;
+}
+
+.text-center {
+    text-align: center;
 }
 
 
@@ -13,8 +83,9 @@ body {
 .main {
     background-color: #f2f2f2;
     color: #015249;
-    text-align: center;
     padding-top: 150px;
+    padding-left: 75px;
+    padding-right: 75px;
     padding-bottom: 75px;
 }
 
@@ -33,43 +104,20 @@ body {
 }
 
 
-/*IMG STUFF*/
+/*PROJECTS*/
 
-.img__wrap {
-    position: relative;
-    height: 200px;
-    width: 257px;
+.project {
+    padding: 100px 50px;
 }
 
-.img__description_layer {
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    background: rgba(36, 62, 206, 0.6);
-    color: #fff;
-    visibility: hidden;
-    opacity: 0;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    /* transition effect. not necessary */
-    transition: opacity .2s, visibility .2s;
+.to-the-right {
+    float: right;
+    margin-left: 30px;
 }
 
-.img__wrap:hover .img__description_layer {
-    visibility: visible;
-    opacity: 1;
-}
-
-.img__description {
-    transition: .2s;
-    transform: translateY(1em);
-}
-
-.img__wrap:hover .img__description {
-    transform: translateY(0);
+.to-the-left {
+    float: left;
+    margin-right: 30px;
 }
 
 
