@@ -1,307 +1,264 @@
 @import url('https://fonts.googleapis.com/css?family=Nunito');
 
-
 /*CHART STUFF*/
+
+
 /* RESET RULES & HELPER CLASSES
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 :root {
-  --skills-width: 120px;
+    --skills-width: 120px;
 }
 
 * {
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
 }
 
 ul {
-  list-style: none;
+    list-style: none;
 }
 
 a {
-  text-decoration: none;
-  color: inherit;
+    text-decoration: none;
+    color: inherit;
 }
 
 .d-block {
-  display: block;
+    display: block;
 }
 
 .d-flex {
-  display: flex;
+    display: flex;
 }
 
 .flex-column {
-  flex-direction: column;
+    flex-direction: column;
 }
 
 .justify-content-center {
-  justify-content: center;
+    justify-content: center;
 }
 
 .justify-content-between {
-  justify-content: space-between;
+    justify-content: space-between;
 }
 
 .align-items-center {
-  align-items: center;
+    align-items: center;
 }
 
 .align-items-end {
-  align-items: flex-end;
+    align-items: flex-end;
 }
 
 .flex-grow-1 {
-  flex-grow: 1;
+    flex-grow: 1;
 }
 
 .vh-100 {
-  height: 50vh;
+    height: 50vh;
 }
 
 .position-relative {
-  position: relative;
+    position: relative;
 }
 
 .position-absolute {
-  position: absolute;
+    position: absolute;
 }
 
 .position-fixed {
-  position: fixed;
+    position: fixed;
 }
 
 .text-center {
-  text-align: center;
+    text-align: center;
 }
-
-
-
-
-
-
-
-
-
-
-
-
-
-
 
 body {
-  font-family: 'Nunito', normal;
-  background-color: #015249;
-  color: #57bc90;
-  margin: 0;
+    font-family: 'Nunito', normal;
+    background-color: #015249;
+    color: #57bc90;
+    margin: 0;
 }
+
 
 /*DESCRIPTION DIV*/
-.description {
-  background-color: #f2f2f2;
-  color: #015249;
-  text-align: center;
-  padding-top: 150px;
-  padding-bottom: 75px;
 
+.description {
+    background-color: #f2f2f2;
+    color: #015249;
+    text-align: center;
+    padding: 75px 0px;
 }
 
-.description a{
-  color:#015249;
-  text-decoration:none;
+.description a {
+    color: #015249;
+    text-decoration: none;
 }
 
 .description a:hover {
-  color: #77C9D4;
+    color: #77C9D4;
 }
 
-.portrait, .about-text{
-  width: 350px;
-  display: inline-block;
-  text-align: left;
-  vertical-align: middle;
+.portrait,
+.about-text {
+    width: 350px;
+    display: inline-block;
+    text-align: left;
+    vertical-align: middle;
 }
-
 
 
 /*SKILLS DIV*/
 
-.my-skills{
-  padding: 50px 200px;
-  color: #f2f2f2;
-  background-color: #57bc90;
+.my-skills {
+    padding: 50px;
+    color: #f2f2f2;
+    background-color: #57bc90;
 }
 
-#skills{
-  padding:100px;
-}
-/*
-.skills-container {
-  width: 100%;
-  background-color: #f2f2f2;
+#skills {
+    margin: 50px 25px 100px;
+    padding: 0px;
 }
 
-.skills {
-  text-align: center;
-  padding: 15px 0px;
-  color: #f2f2f2;
-  background-color: #015249;
+img {
+    border: 3px solid #57bc90;
+    margin: 15px;
 }
 
-.languages{
-  padding: 0px 100px;
+.footer {
+    text-align: center;
+    padding: 30px 0px;
 }
-
-.java {width: 80%;}
-.html {width: 70%;}
-.javascript {width: 65%;}
-.python {width: 50%;}
-.matlab {width: 40%;}
-.c {width: 35%;}
-*/
-
-.experience {
-  background-color: #f2f2f2;
-  color: #015249;
-  padding: 50px 200px;
-}
-
-img{
-  border: 3px solid #57bc90;
-  margin: 15px;
-
-}
-
-.footer{
-  text-align: center;
-  padding: 30px 0px;
-}
-
 
 
 /* CHART
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
+
 .chart-wrapper {
-  width: 100%;
-  max-width: 500px;
+    width: 100%;
+    max-width: 500px;
 }
 
 .chart-wrapper .chart-skills li::before,
 .chart-wrapper .chart-skills li::after {
-  content: "";
-  position: absolute;
-  top: 25%;
-  left: var(--skills-width);
-  height: 50%;
-  border-top-right-radius: 10px;
-  border-bottom-right-radius: 10px;
-  z-index: 2;
+    content: "";
+    position: absolute;
+    top: 25%;
+    left: var(--skills-width);
+    height: 50%;
+    border-top-right-radius: 10px;
+    border-bottom-right-radius: 10px;
+    z-index: 2;
 }
 
 .chart-wrapper .chart-skills li::after {
-  width: calc(100% - var(--skills-width));
-  background: rgba(211, 211, 211, 0.3);
+    width: calc(100% - var(--skills-width));
+    background: rgba(211, 211, 211, 0.3);
 }
 
 .chart-wrapper .chart-skills li::before {
-  width: 0;
-  background: #015249;
+    width: 0;
+    background: #015249;
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(1)::before {
-  width: calc(90% - var(--skills-width));
+    width: calc(90% - var(--skills-width));
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(2)::before {
-  width: calc(75% - var(--skills-width));
+    width: calc(75% - var(--skills-width));
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(3)::before {
-  width: calc(62% - var(--skills-width));
+    width: calc(62% - var(--skills-width));
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(4)::before {
-  width: calc(50% - var(--skills-width));
+    width: calc(50% - var(--skills-width));
 }
 
 .chart-wrapper.in-view .chart-skills li:nth-child(5)::before {
-  width: calc(45% - var(--skills-width));
+    width: calc(45% - var(--skills-width));
 }
+
 .chart-wrapper.in-view .chart-skills li:nth-child(6)::before {
-  width: calc(45% - var(--skills-width));
+    width: calc(45% - var(--skills-width));
 }
+
 .chart-wrapper.in-view .chart-skills li:nth-child(7)::before {
-  width: calc(40% - var(--skills-width));
+    width: calc(40% - var(--skills-width));
 }
 
 .chart-wrapper .chart-skills span {
-  display: inline-block;
-  width: var(--skills-width);
-  padding: 15px;
+    display: inline-block;
+    width: var(--skills-width);
+    padding: 15px;
 }
 
 .chart-wrapper .chart-levels {
-  left: 0;
-  bottom: 0;
-  width: 100%;
-  height: 100%;
-  padding-left: var(--skills-width);
+    left: 0;
+    bottom: 0;
+    width: 100%;
+    height: 100%;
+    padding-left: var(--skills-width);
 }
 
 .chart-wrapper .chart-levels li {
-  border-right: 1px solid rgba(211, 211, 211, 0.3);
+    border-right: 1px solid rgba(211, 211, 211, 0.3);
 }
-
 
 .chart-wrapper .chart-levels span {
-  bottom: 0;
-  transform: translateY(50px) rotate(45deg);
-  width: 100%;
+    bottom: 0;
+    transform: translateY(50px) rotate(45deg);
+    width: 100%;
 }
-
-
-
-
 
 
 /* NAV BAR */
 
 .topnav {
-  display: flex;
-  justify-content: space-between;
-  padding: 35px;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  background-color: #015249;
- }
-
- .right-side {
-   display: flex;
- }
-
- .nav-wrapper > .right-side > div {
-  margin-left: 20px;
+    display: flex;
+    justify-content: space-between;
+    padding: 35px;
+    position: sticky;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #015249;
 }
 
- .nav-link-wrapper {
-  height: 20px;
+.right-side {
+    display: flex;
 }
 
-.left-side > div > a{
-  border: 2px solid #57bc90;
+.nav-wrapper>.right-side>div {
+    margin-left: 20px;
+}
+
+.nav-link-wrapper {
+    height: 20px;
+}
+
+.left-side>div>a {
+    border: 2px solid #57bc90;
 }
 
 .nav-link-wrapper a {
-  color: #57bc90;
-  padding: 15px;
-  text-decoration: none;
-  font-size: 20px;
+    color: #57bc90;
+    padding: 15px;
+    text-decoration: none;
+    font-size: 20px;
 }
 
 .topnav a:hover {
-  color: #77C9D4;
+    color: #77C9D4;
 }
+
 
 /*color schemes:
 CURRENT: Modernity in Full Bloom
@@ -315,6 +272,3 @@ POSSIBLE: Clean Gradients and Fresh Blues
    #57bc90 - marine (seafoam green)
    #015249 - forest (dark green with hint of blue)
    #a5a5af - sleek grey (gray .. duh)*/
-
-  
-  
