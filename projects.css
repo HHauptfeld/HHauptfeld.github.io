@@ -6,77 +6,6 @@ body {
     margin: 0;
 }
 
-:root {
-    --skills-width: 120px;
-}
-
-* {
-    padding: 0;
-    margin: 0;
-    box-sizing: border-box;
-}
-
-ul {
-    list-style: none;
-}
-
-a {
-    text-decoration: none;
-    color: inherit;
-}
-
-.d-block {
-    display: block;
-}
-
-.d-flex {
-    display: flex;
-}
-
-.flex-column {
-    flex-direction: column;
-}
-
-.justify-content-center {
-    justify-content: center;
-}
-
-.justify-content-between {
-    justify-content: space-between;
-}
-
-.align-items-center {
-    align-items: center;
-}
-
-.align-items-end {
-    align-items: flex-end;
-}
-
-.flex-grow-1 {
-    flex-grow: 1;
-}
-
-.vh-100 {
-    height: 50vh;
-}
-
-.position-relative {
-    position: relative;
-}
-
-.position-absolute {
-    position: absolute;
-}
-
-.position-fixed {
-    position: fixed;
-}
-
-.text-center {
-    text-align: center;
-}
-
 
 /*MAIN DIV*/
 
@@ -159,17 +88,3 @@ a {
 .topnav a:hover {
     color: #77C9D4;
 }
-
-
-/*color schemes:
-CURRENT: Modernity in Full Bloom
-   #182628 - (dark greenish blue, almost black)
-   #65ccb8 - (mix of sky blue and seafoam green)
-   #57ba98 - (darker version of color above)
-   #3b945e - (leaf green)
-   #f2f2f2 - (whitish gray)
-POSSIBLE: Clean Gradients and Fresh Blues
-   #77C9D4 - feather (sky blue)
-   #57bc90 - marine (seafoam green)
-   #015249 - forest (dark green with hint of blue)
-   #a5a5af - sleek grey (gray .. duh)*/
