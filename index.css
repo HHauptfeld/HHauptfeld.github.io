@@ -58,7 +58,7 @@ a {
 }
 
 .vh-100 {
-    height: 50vh;
+    height: 100vh;
 }
 
 .position-relative {
@@ -91,7 +91,7 @@ body {
     background-color: #f2f2f2;
     color: #015249;
     text-align: center;
-    padding: 75px 0px;
+    padding-top: 150px;
 }
 
 .description a {
@@ -120,11 +120,6 @@ body {
     background-color: #57bc90;
 }
 
-#skills {
-    margin: 50px 25px 100px;
-    padding: 0px;
-}
-
 img {
     border: 3px solid #57bc90;
     margin: 15px;
@@ -136,11 +131,36 @@ img {
 }
 
 
+/* SCROLL-DOWN
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.scroll-down {
+    bottom: 0;
+    transition: all 0.5s;
+}
+
+.scroll-down.is-hidden {
+    opacity: 0;
+    visibility: hidden;
+}
+
+.scroll-down::after {
+    content: "";
+    display: block;
+    margin: 3px auto 0;
+    width: 1px;
+    height: 60px;
+    background: var(--black);
+    transform-origin: bottom;
+    animation: pulse 3.5s infinite linear;
+}
+
+
 /* CHART
 –––––––––––––––––––––––––––––––––––––––––––––––––– */
 
 .chart-wrapper {
-    width: 100%;
+    width: 95%;
     max-width: 500px;
 }
 
@@ -212,9 +232,14 @@ img {
     border-right: 1px solid rgba(211, 211, 211, 0.3);
 }
 
+.chart-wrapper .chart-levels li:last-child {
+    border-right: 0;
+}
+
 .chart-wrapper .chart-levels span {
     bottom: 0;
     transform: translateY(50px) rotate(45deg);
+    padding: 10px;
     width: 100%;
 }
 
@@ -257,6 +282,30 @@ img {
 
 .topnav a:hover {
     color: #77C9D4;
+}
+
+
+/* HEADER
+–––––––––––––––––––––––––––––––––––––––––––––––––– */
+
+.page-header {
+    left: 0;
+    right: 0;
+    top: 0;
+    padding: 0px;
+    z-index: 10;
+}
+
+.page-header .logo {
+    font-size: 1.7rem;
+}
+
+.page-header li:not(:last-child) {
+    margin-right: 20px;
+}
+
+.page-header a {
+    font-size: 1.1rem;
 }
 
 
