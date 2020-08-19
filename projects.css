@@ -1,21 +1,9 @@
-@import url('https://fonts.googleapis.com/css?family=Nunito');
-body {
-    font-family: 'Nunito', normal;
-    background-color: #015249;
-    color: #57bc90;
-    margin: 0;
-}
-
-
 /*MAIN DIV*/
 
 .main {
     background-color: #f2f2f2;
     color: #015249;
-    padding-top: 150px;
-    padding-left: 75px;
-    padding-right: 75px;
-    padding-bottom: 75px;
+    padding: 150px 75px 75px;
 }
 
 .main a {
@@ -47,44 +35,4 @@ body {
 .to-the-left {
     float: left;
     margin-right: 30px;
-}
-
-
-/* NAV BAR */
-
-.topnav {
-    display: flex;
-    justify-content: space-between;
-    padding: 35px !important;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    background-color: #015249;
-}
-
-.right-side {
-    display: flex;
-}
-
-.nav-wrapper>.right-side>div {
-    margin-left: 20px;
-}
-
-.nav-link-wrapper {
-    height: 20px;
-}
-
-.left-side>div>a {
-    border: 2px solid #57bc90;
-}
-
-.nav-link-wrapper a {
-    color: #57bc90;
-    padding: 15px;
-    text-decoration: none;
-    font-size: 20px;
-}
-
-.topnav a:hover {
-    color: #77C9D4;
 }
