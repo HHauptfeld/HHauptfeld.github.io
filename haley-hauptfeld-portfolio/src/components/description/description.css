@@ -1,0 +1,30 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+
+
+.description {
+    background-color: #f2f2f2;
+    color: #015249;
+    padding-top: 125px;
+    display: flex;
+    align-items: center;
+    text-align: left;
+    font-family: 'Nunito', normal;
+}
+
+.description a {
+    color: #015249;
+    text-decoration: none;
+}
+
+.description a:hover {
+    color: #77C9D4;
+}
+
+.description img {
+    width: 300px;
+    margin-left: 5%;
+}
+.about-text {
+    width: 40%;
+    margin-left: 5%;
+}
